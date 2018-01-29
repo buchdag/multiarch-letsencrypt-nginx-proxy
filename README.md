@@ -1,7 +1,5 @@
 ## nginx-proxy with letsencrypt-nginx-proxy-companion on armhf and arm64
 
-### [THIS IS CURRENTLY NOT WORKING ON ARMHF, DO NOT USE IT ON THIS ARCH.](https://github.com/buchdag/multiarch-letsencrypt-nginx-proxy/issues/1)
-
 This repo provide a simplified way to run up to date [nginx-proxy](https://github.com/jwilder/nginx-proxy) stack with [Let's Encrypt support](https://github.com/JrCs/docker-letsencrypt-nginx-proxy-companion) on non `amd64` architectures.
 
 It requires [docker-compose](https://docs.docker.com/compose/install/#install-compose) to run.
