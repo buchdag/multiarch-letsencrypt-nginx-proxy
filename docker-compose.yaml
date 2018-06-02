@@ -20,9 +20,6 @@ services:
   docker-gen:
     build:
       context: ./docker-gen
-      args:
-        OS: alpine-linux
-        ARCH: amd64
     image: docker-gen
     container_name: nginx-proxy-gen
     command: -notify-sighup nginx-proxy -watch -wait 5s:30s /etc/docker-gen/templates/nginx.tmpl /etc/nginx/conf.d/default.conf
@@ -38,9 +35,6 @@ services:
   letsencrypt:
     build:
       context: ./letsencrypt-nginx-proxy-companion
-      args:
-        OS: alpine-linux
-        ARCH: amd64
     image: letsencrypt-nginx-proxy-companion
     container_name: nginx-proxy-le
     volumes_from:

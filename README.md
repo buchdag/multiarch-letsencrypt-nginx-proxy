@@ -10,10 +10,8 @@ It requires [docker-compose](https://docs.docker.com/compose/install/#install-co
 
 2. `cd multiarch-letsencrypt-nginx-proxy`
 
-3. Edit `docker-compose.yaml` and change the two default `ARCH: amd64` build arguments to the architecture you're running on (either `ARCH: armhf` or `ARCH: arm64`).
-
-4. `docker-compose up -d`
+3. `docker-compose up -d`
 
 Certificate issuance was sucessfully tested on [Scaleway](https://www.scaleway.com/) `C1` and `ARM64-2GB` servers.
 
-**Note:** the docker-gen binaries are downloaded from the `buchdag/docker-gen` fork because upstream `jwilder/docker-gen` does not provide `arm64` binaries yet. A [pull request](https://github.com/jwilder/docker-gen/pull/272) has been opened to add those binaries to upstream releases.
+The two multi-stage Dockerfiles will produce a build container that won't be automatically cleaned afterwards. You can remove it with `docker image prune --filter label=stage=intermediate`.
