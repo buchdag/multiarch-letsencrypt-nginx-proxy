@@ -12,6 +12,8 @@ It requires [docker-compose](https://docs.docker.com/compose/install/#install-co
 
 3. `docker-compose up -d`
 
-Certificate issuance was sucessfully tested on [Scaleway](https://www.scaleway.com/) `C1` and `ARM64-2GB` servers.
+Please note that on low end ARM devices, container build will take a while and DH parameters generation by `letsencrypt-nginx-proxy-companion` might take even longer.
+
+Certificate issuance was successfully tested on [Scaleway](https://www.scaleway.com/) `C1` and `ARM64-2GB` servers.
 
 The two multi-stage Dockerfiles will produce a build container that won't be automatically cleaned afterwards. You can remove it with `docker image prune --filter label=stage=intermediate`.
