@@ -2,7 +2,7 @@
 
 This repo provide a simplified way to run up to date [nginx-proxy](https://github.com/jwilder/nginx-proxy) stack with [Let's Encrypt support](https://github.com/JrCs/docker-letsencrypt-nginx-proxy-companion) on non `amd64` architectures.
 
-It requires [docker-compose](https://docs.docker.com/compose/install/#install-compose) to run.
+It requires Docker 17.05+ and [docker-compose](https://docs.docker.com/compose/install/#install-compose) to run.
 
 ### Usage:
 
