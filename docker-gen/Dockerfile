@@ -19,7 +19,7 @@ RUN go get github.com/jwilder/docker-gen \
     && make get-deps \
     && make all
 
-FROM alpine:3.6
+FROM alpine:3.7
 
 LABEL maintainer="Nicolas Duchon <nicolas.duchon@gmail.com>"
 
