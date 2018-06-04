@@ -6,11 +6,17 @@ It requires Docker 17.05+ and [docker-compose](https://docs.docker.com/compose/i
 
 ### Usage:
 
-1. `git clone https://github.com/buchdag/multiarch-letsencrypt-nginx-proxy`
+- `git clone https://github.com/buchdag/multiarch-letsencrypt-nginx-proxy`
 
-2. `cd multiarch-letsencrypt-nginx-proxy`
+Depending on [which](https://github.com/JrCs/docker-letsencrypt-nginx-proxy-companion/wiki/Basic-usage) [setup](https://github.com/JrCs/docker-letsencrypt-nginx-proxy-companion/wiki/Advanced-usage) you want, either
 
-3. `docker-compose up -d`
+- `cd multiarch-letsencrypt-nginx-proxy/nginx-proxy-2containers`
+
+or
+
+- `cd multiarch-letsencrypt-nginx-proxy/nginx-proxy-3containers`
+
+- `docker-compose up -d`
 
 Please note that on low end ARM devices, container build will take a while and DH parameters generation by `letsencrypt-nginx-proxy-companion` might take even longer.
 
