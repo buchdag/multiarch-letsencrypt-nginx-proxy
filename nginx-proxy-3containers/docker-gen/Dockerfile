@@ -1,4 +1,4 @@
-FROM golang:1.10-alpine AS build-docker-gen
+FROM golang:1.15-alpine AS build-docker-gen
 
 ARG DOCKER_GEN_VERSION=0.7.4
 
