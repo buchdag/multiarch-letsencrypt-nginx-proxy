@@ -1,4 +1,4 @@
-FROM golang:1.10-alpine AS go-builder
+FROM golang:1.15-alpine AS go-builder
 
 ARG DOCKER_GEN_VERSION=0.7.4
 ARG FOREGO_VERSION=20180216151118
