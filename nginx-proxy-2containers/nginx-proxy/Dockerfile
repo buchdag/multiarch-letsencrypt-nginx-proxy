@@ -26,7 +26,7 @@ RUN go get github.com/jwilder/docker-gen \
     && make get-deps \
     && make all
 
-FROM nginx:1.13-alpine
+FROM nginx:1.18-alpine
 
 LABEL maintainer="Nicolas Duchon <nicolas.duchon@gmail.com>"
 
