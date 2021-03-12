@@ -8,7 +8,7 @@ It requires Docker 17.05+ and [docker-compose](https://docs.docker.com/compose/i
 
 - `git clone https://github.com/buchdag/multiarch-letsencrypt-nginx-proxy`
 
-Depending on [which](https://github.com/nginx-proxy/docker-letsencrypt-nginx-proxy-companion/blob/master/docs/Basic-usage.md) [setup](https://github.com/nginx-proxy/docker-letsencrypt-nginx-proxy-companion/blob/master/docs/Advanced-usage) you want, either
+Depending on [which](https://github.com/nginx-proxy/docker-letsencrypt-nginx-proxy-companion/blob/master/docs/Basic-usage.md) [setup](https://github.com/nginx-proxy/docker-letsencrypt-nginx-proxy-companion/blob/master/docs/Advanced-usage.md) you want, either
 
 - `cd multiarch-letsencrypt-nginx-proxy/nginx-proxy-2containers`
 
