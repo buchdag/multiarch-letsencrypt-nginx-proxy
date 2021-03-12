@@ -1,4 +1,4 @@
-FROM golang:1.15-alpine AS go-builder
+FROM golang:1.13-alpine AS go-builder
 
 ARG DOCKER_GEN_VERSION=0.7.4
 ARG FOREGO_VERSION=20180216151118
@@ -26,7 +26,7 @@ RUN go get github.com/jwilder/docker-gen \
     && make get-deps \
     && make all
 
-FROM nginx:1.13-alpine
+FROM nginx:1.18-alpine
 
 LABEL maintainer="Nicolas Duchon <nicolas.duchon@gmail.com>"
 

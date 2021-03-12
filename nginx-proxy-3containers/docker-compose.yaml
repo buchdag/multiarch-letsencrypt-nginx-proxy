@@ -2,7 +2,7 @@ version: '2'
 
 services:
   nginx:
-    image: nginx:alpine
+    image: nginx:1.18-alpine
     container_name: nginx-proxy
     ports:
       - "80:80"
@@ -41,6 +41,7 @@ services:
       - nginx
     volumes:
       - certs:/etc/nginx/certs:rw
+      - acme:/etc/acme.sh
       - /var/run/docker.sock:/var/run/docker.sock:ro
     network_mode: bridge
     restart: always
@@ -50,3 +51,4 @@ volumes:
   vhost:
   html:
   certs:
+  acme:
