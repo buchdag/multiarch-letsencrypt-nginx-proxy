@@ -45,12 +45,12 @@ RUN apk add --no-cache --virtual .bin-deps \
         socat
 
 # Install acme.sh and the letsencrypt service
-RUN mkdir /src \
+RUN mkdir /companion-src \
     && curl -sSL https://github.com/nginx-proxy/docker-letsencrypt-nginx-proxy-companion/archive/master.tar.gz \
-    | tar -C /src -xz \
-    && mv /src/docker-letsencrypt-nginx-proxy-companion-master/app /app \
-    && /src/docker-letsencrypt-nginx-proxy-companion-master/install_acme.sh \
-    && rm -rf /src
+    | tar -C /companion-src -xz \
+    && mv /companion-src/docker-letsencrypt-nginx-proxy-companion-master/app /app \
+    && /companion-src/docker-letsencrypt-nginx-proxy-companion-master/install_acme.sh \
+    && rm -rf /companion-src
 
 WORKDIR /app
 
